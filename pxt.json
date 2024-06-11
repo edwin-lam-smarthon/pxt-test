@@ -5,12 +5,14 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "smarthon-smartcity-kit": "github:smarthon/pxt-smartcity#v0.1.49"
     },
     "files": [
         "README.md",
         "main.blocks",
-        "main.ts"
+        "main.ts",
+        "sensor.ts"
     ],
     "testFiles": [
         "test.ts"

@@ -21,7 +21,7 @@ namespace AdvancedModule {
             Averageval += sensorarray[i]
         }
         Averageval = Averageval/10
-        ph_value_number = (Averageval * 6 / 1023) + offset
+        ph_value_number = (Averageval * 5 / 1023) + offset
         return ph_value_number
     }
 }

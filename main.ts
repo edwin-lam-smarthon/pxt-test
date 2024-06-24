@@ -7,9 +7,9 @@ WiFiIoT.setWifi("smarthon", "12345678")
 basic.forever(function () {
     if (WiFiIoT.is_wifi_connect()) {
         OLED.clear()
-        OLED.writeStringNewLine("PH: " + AdvancedModule.readPhNumber(AnalogPin.P0, 4.4))
+        OLED.writeStringNewLine("PH: " + AdvancedModule.readPhNumber(AnalogPin.P0, 5.3))
         ph = AdvancedModule.readPhNumber(AnalogPin.P0, 0)
-        offset = 4.4
+        offset = 5.3
         WiFiIoT.sendThingspeak(
         "EKD278W78BT094U0",
         ph + offset

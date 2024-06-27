@@ -18,7 +18,18 @@ namespace AdvancedModule {
             avgValue += sensorarray[i];
         }
 
-        ph_value_number = (avgValue/ 6 * 5 / 1023)* 3.5 + offset
+        ph_value_number = (avgValue/ 6 * 5 / 1023)* 3.5 + offset 
         return ph_value_number * 1.00
+    }
+    let Voltage =0
+    let pH_Value =0
+    //% blockId="readVoltage"
+    //% block="Read Voltage value pin %ports"
+    //% weight=70 group="Water"
+    export function ShowVoltage(ports: AnalogPin): number {
+
+        pH_Value = pins.analogReadPin(ports);
+        Voltage = pH_Value * (5.0 / 1023.0);
+        return Voltage
     }
 }

@@ -18,8 +18,9 @@ namespace AdvancedModule {
             avgValue += sensorarray[i];
         }
 
-        ph_value_number = (avgValue/ 6 * 5 / 1023)* 3.5 + offset 
-        return ph_value_number * 1.00
+        avgValue = avgValue / 6
+        ph_value_number = ((avgValue * 5 / 1024 ) + offset)
+        return ph_value_number 
     }
     let Voltage =0
     let pH_Value =0

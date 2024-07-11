@@ -19,7 +19,7 @@ namespace AdvancedModule {
         }
 
         avgValue = avgValue / 6
-        ph_value_number = ((avgValue * 5 / 1024 ) + offset)
+        ph_value_number = ((avgValue * 5 / 1024 )*10.623 + offset -23.813)
         return ph_value_number 
     }
     let Voltage =0
